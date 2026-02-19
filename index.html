@@ -11,19 +11,20 @@
             vr-mode-ui="enabled: false"
             device-orientation-permission-ui="enabled: false"
         >
+            <a-assets>
+                <img id="my-picture" src="./frame_1_smaller.jpg" />
+            </a-assets>
             <a-camera
                 position="0 0 0"
                 look-controls="enabled: false"
             ></a-camera>
             <a-entity mindar-image-target="targetIndex: 0">
-                <a-plane
-                    color="blue"
-                    opaciy="0.5"
-                    position="0 0 0"
-                    height="0.552"
-                    width="1"
-                    rotation="0 0 0"
-                ></a-plane>
+                <a-image
+                    src="#my-picture"
+                    width="1.1"
+                    height="0.704"
+                    position="0 0 0.01"
+                ></a-image>
             </a-entity>
         </a-scene>
     </body>

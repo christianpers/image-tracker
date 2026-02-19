@@ -12,7 +12,7 @@
             device-orientation-permission-ui="enabled: false"
         >
             <a-assets>
-                <img id="my-picture" src="./frame_1_smaller.jpg" />
+                <img id="my-picture" src="./frame_1_orig.jpg" />
             </a-assets>
             <a-camera
                 position="0 0 0"
@@ -21,10 +21,12 @@
             <a-entity mindar-image-target="targetIndex: 0">
                 <a-image
                     src="#my-picture"
-                    width="1.1"
-                    height="0.704"
+                    width="1"
+                    height="0.64"
                     position="0 0 0.01"
-                ></a-image>
+                    rotation="0 0 0"
+                >
+                </a-image>
             </a-entity>
         </a-scene>
     </body>
